@@ -1,0 +1,1 @@
+export function GET(){return new Response(import.meta.env.SITE_RELEASE==='production'?'User-agent: *\nAllow: /\nSitemap: https://aroniapartners.com/sitemap.xml\n':'User-agent: *\nDisallow: /\n',{headers:{'Content-Type':'text/plain'}})}
