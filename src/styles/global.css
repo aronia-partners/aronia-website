@@ -14,3 +14,12 @@
 .carousel-group{min-width:min(1240px,calc(100vw - 40px));justify-content:space-between}.logo-carousel.is-paused .carousel-track{animation-play-state:paused}.carousel-pause{display:block;margin:14px 0 0 auto;border:0;border-bottom:1px solid var(--line);padding:3px 0;background:transparent;color:var(--muted);font-size:.68rem;cursor:pointer}
 
 .story-photo.privv-presentation{height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top}
+
+.branded-recognition li{display:grid;grid-template-columns:94px minmax(0,1fr);gap:22px;align-items:center;min-height:112px}.credential-logo{display:flex!important;align-items:center;justify-content:center;min-width:0;margin:0!important}.credential-logo img{width:auto;max-width:94px;height:auto;max-height:44px;object-fit:contain;mix-blend-mode:multiply}.credential-logo.stacked{flex-direction:column;gap:12px}.branded-media a{display:grid;grid-template-columns:94px minmax(0,1fr) 14px;gap:22px;align-items:center;min-height:112px}.credential-copy{min-width:0}.branded-media .credential-copy strong{font-weight:600}.branded-media{margin-top:35px}.branded-recognition{margin-top:35px}@media(max-width:600px){.branded-recognition li{grid-template-columns:74px minmax(0,1fr);gap:16px}.branded-media a{grid-template-columns:74px minmax(0,1fr) 12px;gap:14px}.credential-logo img{max-width:74px;max-height:38px}.branded-recognition strong{font-size:1rem}}
+/* Match sourced logos to the existing muted monochrome credential marks. */
+.credential-logo img[src*="greater-irvine-chamber"],
+.credential-logo img[src*="kauppalehti"]{filter:grayscale(1) brightness(0);opacity:.58}
+
+/* Equal heading space and row heights align both columns' dividers. */
+.credentials-columns>div{display:grid;grid-template-rows:auto 1fr auto;align-content:start}.credentials-columns h2{margin-bottom:0}.credentials-columns .branded-recognition,.credentials-columns .branded-media{margin-top:35px;margin-bottom:0}.credentials-columns .branded-recognition li,.credentials-columns .branded-media a{height:124px;min-height:124px;padding:18px 0}.credentials-columns .branded-media li{border-top:1px solid var(--line)}.credentials-columns .branded-media a{border:0}@media(max-width:900px){.credentials-columns>div{display:block}.credentials-columns .branded-recognition li,.credentials-columns .branded-media a{height:auto;min-height:112px}}
+@media(min-width:901px){.credentials-columns .branded-media li{height:124px}.credentials-columns .branded-media a{height:100%;min-height:0}}
